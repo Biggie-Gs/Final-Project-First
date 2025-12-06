@@ -1,7 +1,7 @@
 
 <html lang ="en">
   <head>
-    <meta http-equiv="refresh" content="0"; URL="hobbywebsite.html">
+    <meta http-equiv="refresh" content="0; URL=hobbywebsite.html"/>
   </head>
 <body>
   <a href="hobbywebsite.html"> Main </a>
