@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>Hobby Website</title>
+<style>
+:root {
+    --white: #f8f7f3;
+    --red: #b71c1c;
+    --red-dark: #7f1414;
+    --black: #1a1a1a;
+    --gray: #333;
+    --card-bg: #ffffffd9;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background: var(--white);
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+    line-height: 1.7;
+}
+
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
+}
+
+.header {
+    background: var(--black);
+    padding: 12px 20px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 4px solid var(--red);
+}
+
+.section {
+    background: var(--card-bg);
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-left: 5px solid var(--red);
+}
+
+h1 {
+    text-align: center;
+    border-left: none;
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 10px;
+}
+
+.card-img {
+    display: block;
+    margin: 10px 0 20px 0;
+    border-radius: 4px;
+    border: 2px solid #00000055;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+}
+.dropbtn {
+  background-color: #FA0509;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+	<h1>Magic the Gathering</h1>
+	<p> Magic the Gathering is a tabletop card game otherwise known as a TCG. The basic permise of a TCG is there are packs of specific cards that you buy and open. With said cards you would make yourself a deck to play a specific mode of Magic the Gathering. </p>
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Menu</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="NewPlayer.html">New Player</a>
+			<a href="AboutMe.html">About</a>
+			<a href="DifferentModes.html">Different Game Types</a>
+			<a href="Contact.html"> Contact </a>
+			<a href="DifferentArchtypes.html">Deck Themes</a>
+		</div>
+	</div>
+	<section class="section">
+	<p> Magic the Gathering was created back in 1993 at gencon with the limited edition Alpha set and ever since Magic the Gathering has been a great part of many peoples lives.
+	It brings friends together and has many different ways to play. This allows people to use the 32 years of cards to play the way they want to. If they like quick games they may play a lot of cards early on, if they want it slow and
+	methodical then they may play with cards the stop their opponent from casting their biggest spells, and some people just want to get the biggest number on their cards as possible. These are all ways people have fun while deck building and playing Magic the Gathering!
+	</p>
+	<p> For more websites to learn and deck build I would recommend <br>
+	https://edhrec.com for learning good cards in commander!<br>
+	https://archidekt.com or https://moxfield.com for building decks <br>
+	https://magic.wizards.com/en is the offical Magic the gathering site </p>
+	
+	</section>
+	<script>
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+	
+</script>
+<p> ChangeLog- </p>
+	<ul> Everything </ul>
+</body>
+</html>
